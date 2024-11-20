@@ -12,7 +12,7 @@ interface User {
 function App() {
   const [userData, setUserData] = useState<User[]>([]);
   const [userInput, setUserInput] = useState<string>('');
-  const [natInput, setNatInput] = useState<string>('');
+  const [natInput, setNatInput] = useState<string>('All');
 
   const fetchUserData = async () => {
     const response = await fetch(`https://randomuser.me/api/?results=50`);
